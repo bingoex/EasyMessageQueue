@@ -8,4 +8,6 @@ A Msg queue in C language for all C\* project
  - use shm memery
  - just at a buffers for msg temperar
 
+## How to use it
+ more detail to see test.c
 

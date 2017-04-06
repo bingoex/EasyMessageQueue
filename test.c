@@ -13,13 +13,11 @@
 
 int main(int argc, char * argv[])
 {
-
-
 	Channel_Queue * pstChannel = NULL;
 	struct timeval tNow;
 	char Body[100] = "abc";
 	int iBodyLen = sizeof(Body);
-	printf("begin\n");
+
 	int iRet = GetChannelQueueShm(123456, &pstChannel, 0666 | IPC_CREAT);
 	printf("GetChannelQueueShm %d pstChannel %p\n", iRet, pstChannel);
 
