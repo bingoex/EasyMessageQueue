@@ -169,7 +169,7 @@ int GetPackageFromChannel(Channel_Queue *pstChannel, char *pBody, int *piBodyLen
 		gettimeofday(&tNow, NULL);
 		iDiffTime = (unsigned int)USDIFF(tNow, pstChannelPkgHead->tPkgInTime);
 		if (iDiffTime > MAXTIME_IN_CHANNEL) { 
-			//TODO
+			//TODO 长时间没有处理的包，可做丢包处理
 		}
 
 		if (piDiffUs){ *piDiffUs = iDiffTime;}

@@ -3,7 +3,9 @@
 A Msg queue in C language for all C\* project 
 
  - only support one push one pop
+ - two queue, one request one response
  - no lock
- - just use at a buffers for msg temperar
+ - use shm memery
+ - just at a buffers for msg temperar
 
 
